@@ -1,0 +1,22 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class CameraView : MonoBehaviour {
+    public Transform Player; //Position of the player
+    private Vector3 deltaPos; //Position of the camera
+    
+    // Use this for initialization
+    void Start () {
+        deltaPos = new Vector3(0, 5, -5);
+        Vector3 pos = Player.TransformDirection(deltaPos);
+        transform.position = Player.position + pos;
+        Vector3 playerPos = Player.position + new Vector3(0, 2, 0);
+        transform.LookAt(playerPos);
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		
+	}
+}
