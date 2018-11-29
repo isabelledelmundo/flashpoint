@@ -8,7 +8,7 @@ public class CameraView : MonoBehaviour {
     
     // Use this for initialization
     void Start () {
-        deltaPos = new Vector3(0, 5, -5);
+        deltaPos = new Vector3(0, 10, -12);
         Vector3 pos = Player.TransformDirection(deltaPos);
         transform.position = Player.position + pos;
         Vector3 playerPos = Player.position + new Vector3(0, 2, 0);
