@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
     private Transform Player;
+
 	// Use this for initialization
 	void Start () {
         Player = gameObject.GetComponent<Transform>();
